@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="resources/css/styles.css" />
-    <script defer type="text/javascript" src="resources/js/scripts.js"></script>
-    <title>Data Tracking Application</title>
-  </head>
+	<head>
+		<link rel="stylesheet" href="resources/css/styles.css" />
+		<script defer type="text/javascript" src="resources/js/scripts.js"></script>
+		<title>Data Budget Application</title>
+	</head>
 
-  <body>
-    <div class="header">
-      <h1>Data Tracking Application</h1>
-    </div>
+	<body>
+		<div class="header">
+			<h1>Data Budget Application</h1>
+		</div>
 
-    <div class="container">
-      <div class="text-container">
-        <p class="text">
-          Please enter how much data you plan on purchasing for this month in
-          the input box below:
-        </p>
-      </div>
-      <form action="">
-        <input type="number" value="" />
-        <input type="button" value="SUBMIT" />
-      </form>
-    </div>
-  </body>
+		<div class="container">
+			<div class="text-container">
+				<p class="text">
+					Please enter how much data you plan on purchasing this month in the
+					text area below:
+				</p>
+			</div>
+			<form action="">
+				<input type="number" value="" id="input" />
+				<div class="data-units">
+					<div class="megabyte-btn">
+						<input type="radio" name="data" id="mb-radio" />
+						<span>Megabytes (Mb)</span>
+					</div>
+					<div class="gigabyte-btn">
+						<input type="radio" name="data" id="gb-radio" />
+						<span>Gigabytes (Gb)</span>
+					</div>
+				</div>
+				<input type="button" value="SUBMIT" id="button" />
+			</form>
+		</div>
+	</body>
 </html>
