@@ -1,19 +1,22 @@
-// let dataBundle = prompt ("Please enter how much data you bundle for a month");
-// let monthDays = prompt("How many days are in the month you'll be using the data?", 30)
-// let dailyData = dataBundle/monthDays;
-// let day = 1;
+const input = document.getElementById("input");
+input.setAttribute("placeholder", 0); //I'm Simply testing the setAttribute() method.
 
-// function calculateData()
-// {
-// 	// for (i=0; i<=month[]; i++)
-// 	for(i=0; i<=30; i++)
-// 	{
-// 		document.write("<b>Day " + day +"</b>"+ ": " + dataBundle + " Megabytes of data remaining." + "<br>");
-// 		// document.write("<br>");
-// 		dataBundle = dataBundle - dailyData;
-// 		day += 1;
-// 	}
-// }
+const selectedMonth = document.querySelector("");
+const monthsArray = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; //days of each month of the year.
+// let month = monthsArray[];
+const button = document.getElementById("submit-btn");
+const output = document.getElementById("result-output");
 
-// document.write("You should use " + dailyData + "Mb a day." + "<br>");
-// calculateData();
+button.addEventListener("click", calculateBudget);
+
+//Test logs:
+// console.log(month[0]);
+// console.log(input.value);
+console.log(selectedMonth);
+
+function calculateBudget() {
+	let dataPerDay = input.value / month;
+	return dataPerDay;
+}
+console.log(calculateBudget());
+// function outputResult() {}
