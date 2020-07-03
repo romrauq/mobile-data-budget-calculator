@@ -12,26 +12,77 @@
 		</div>
 
 		<div class="container">
-			<div class="text-container">
-				<p class="text">
-					Please enter how much data you plan on purchasing this month in the
-					text area below:
-				</p>
-			</div>
-			<form action="">
-				<input type="number" value="" id="input" />
-				<div class="data-units">
-					<div class="megabyte-btn">
-						<input type="radio" name="data" id="mb-radio" />
-						<span>Megabytes (Mb)</span>
-					</div>
-					<div class="gigabyte-btn">
-						<input type="radio" name="data" id="gb-radio" />
-						<span>Gigabytes (Gb)</span>
-					</div>
+			<div class="container-inner">
+				<div class="text-container">
+					<p class="text">
+						Please enter how much data you plan on purchasing this month in the
+						text area below:
+					</p>
 				</div>
-				<input type="button" value="SUBMIT" id="button" />
-			</form>
+				<form action="">
+					<input type="number" value="" id="input" />
+					<div class="text-container">
+						<p class="text">
+							Please specify whether the amount entered above is in <br />
+							megabytes(Mb) or gigabytes(Gb):
+						</p>
+					</div>
+					<div class="radio-buttons">
+						<label for="megabytes"
+							>Megabytes <input type="radio" id="mb-radio" checked
+						/></label>
+						<label for="gigabytes">
+							Gigabytes
+							<input type="radio" id="gb-radio"
+						/></label>
+					</div>
+					<div class="text-container">
+						<p class="text">
+							Please select which month you plan on budgeting for:
+						</p>
+					</div>
+					<div class="dropdown-div">
+						<select
+							name="months"
+							id="month-select"
+							style="
+								width: 100%;
+								font-size: 1rem;
+								font-weight: bold;
+								padding: 5px;
+								margin-bottom: 3px;
+								border: 2px solid limegreen;
+								border-radius: 5px;
+							"
+						>
+							<option value="null">- Select Month -</option>
+							<option value="Jan">January</option>
+							<option value="Feb">February</option>
+							<option value="Mar">March</option>
+							<option value="Apr">April</option>
+							<option value="May">May</option>
+							<option value="Jun">June</option>
+							<option value="July">July</option>
+							<option value="Aug">August</option>
+							<option value="Sep">September</option>
+							<option value="Oct">October</option>
+							<option value="Nov">November</option>
+							<option value="Dec">December</option>
+						</select>
+					</div>
+					<input
+						type="submit"
+						placeholder="Calculate Budget"
+						class="submit-btn"
+						id="submit-btn"
+					/>
+				</form>
+			</div>
+		</div>
+		<div class="output-area">
+			<p class="text-container">
+				Result: <span class="result-output" id="result-output"></span>
+			</p>
 		</div>
 	</body>
 </html>
