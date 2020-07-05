@@ -35,9 +35,10 @@ function calculateBudget(e) {
 	} else if (dataAmount.value == "" || dataAmount.value == 0) {
 		console.log("Please enter your data amount");
 	} else {
-		let dataPerDay = dataAmount.value / month;
+		let result = dataAmount.value / month;
+		let resultOutput = result.toFixed(2); //Rounds the returned number result to two decimal places
 
-		output.innerHTML = `${dataPerDay} <b>Megabytes</b> (per day)`;
+		output.innerHTML = `<b>${resultOutput}</b> Megabytes`;
 
 		//Test logs:
 		// console.log("data amount: " + dataAmount.value);
