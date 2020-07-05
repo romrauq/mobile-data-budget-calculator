@@ -15,13 +15,12 @@
 			<div class="container-inner">
 				<div class="text-container">
 					<p class="text">
-						Please enter how much data you plan on purchasing this month in the
-						text area below:
+						Please enter how much data you plan on purchasing this month.
 					</p>
 				</div>
 				<form action="">
 					<input type="number" value="" id="input" />
-					<div class="text-container">
+					<!-- <div class="text-container">
 						<p class="text">
 							Please specify whether the amount entered above is in <br />
 							megabytes(Mb) or gigabytes(Gb):
@@ -35,7 +34,7 @@
 							Gigabytes
 							<input type="radio" id="gb-radio"
 						/></label>
-					</div>
+					</div> -->
 					<div class="text-container">
 						<p class="text">
 							Please select which month you plan on budgeting for:
@@ -43,8 +42,6 @@
 					</div>
 					<div class="dropdown-div">
 						<select
-							name="months"
-							id="month-select"
 							style="
 								width: 100%;
 								font-size: 1rem;
@@ -54,27 +51,29 @@
 								border: 2px solid limegreen;
 								border-radius: 5px;
 							"
+							id="month-select"
 						>
-							<option value="null">- Select Month -</option>
-							<option value="Jan">January</option>
-							<option value="Feb">February</option>
-							<option value="Mar">March</option>
-							<option value="Apr">April</option>
-							<option value="May">May</option>
-							<option value="Jun">June</option>
-							<option value="July">July</option>
-							<option value="Aug">August</option>
-							<option value="Sep">September</option>
-							<option value="Oct">October</option>
-							<option value="Nov">November</option>
-							<option value="Dec">December</option>
+							<option value="#">- Select Month -</option>
+							<option value="0">January</option>
+							<option value="1">February</option>
+							<option value="2">March</option>
+							<option value="3">April</option>
+							<option value="4">May</option>
+							<option value="5">June</option>
+							<option value="6">July</option>
+							<option value="7">August</option>
+							<option value="8">September</option>
+							<option value="9">October</option>
+							<option value="10">November</option>
+							<option value="11">December</option>
 						</select>
 					</div>
+
 					<input
 						type="submit"
 						placeholder="Calculate Budget"
-						class="submit-btn"
-						id="submit-btn"
+						class="calculate-btn"
+						id="calculate-btn"
 					/>
 				</form>
 			</div>
