@@ -111,10 +111,10 @@ input[type="select"] {
 }
 
 .output-area {
-	width: 350px;
+	width: 400px;
 	height: auto;
 	margin: 20px auto;
-	background: #f5f5f5;
+	background: skyblue;
 	border: 3px solid limegreen;
 	border-radius: 10px;
 }
