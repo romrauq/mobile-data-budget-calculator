@@ -8,7 +8,7 @@
 
 	<body>
 		<div class="header">
-			<h1>Mobile Data Budget Application</h1>
+			<h1>Mobile Data Budget Program</h1>
 		</div>
 
 		<div class="container">
@@ -19,40 +19,18 @@
 					</p>
 				</div>
 				<form action="">
-					<input type="number" value="" id="input" />
-					<!-- <div class="text-container">
-						<p class="text">
-							Please specify whether the amount entered above is in <br />
-							megabytes(Mb) or gigabytes(Gb):
-						</p>
+					<div class="inline-elements">
+						<input type="number" value="" id="input" />
+						<span>Mb</span>
 					</div>
-					<div class="radio-buttons">
-						<label for="megabytes"
-							>Megabytes <input type="radio" id="mb-radio" checked
-						/></label>
-						<label for="gigabytes">
-							Gigabytes
-							<input type="radio" id="gb-radio"
-						/></label>
-					</div> -->
+
 					<div class="text-container">
 						<p class="text">
 							Please select which month you plan on budgeting for:
 						</p>
 					</div>
 					<div class="dropdown-div">
-						<select
-							style="
-								width: 100%;
-								font-size: 1rem;
-								font-weight: bold;
-								padding: 5px;
-								margin-bottom: 3px;
-								border: 2px solid limegreen;
-								border-radius: 5px;
-							"
-							id="month-select"
-						>
+						<select id="month-select">
 							<option value="#">- Select Month -</option>
 							<option value="0">January</option>
 							<option value="1">February</option>
@@ -71,18 +49,20 @@
 
 					<input
 						type="submit"
-						placeholder="Calculate Budget"
+						value="Calculate Budget"
 						class="calculate-btn"
 						id="calculate-btn"
 					/>
 				</form>
 			</div>
 		</div>
-		<div class="output-area">
-			<p class="text-container">
-				Data Usage Per Day:
-				<span class="result-output" id="result-output"></span>
-			</p>
+		<div class="output-area-outer">
+			<div class="output-area-inner">
+				<p class="text-container">
+					Usage per day:
+					<span class="result-output" id="result-output">0</span>Mb
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
