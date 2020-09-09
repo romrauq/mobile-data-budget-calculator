@@ -17,12 +17,13 @@ button.addEventListener("click", calculateBudget);
 
 function calculateBudget(e) {
 	e.preventDefault(); //Prevents the default action of the submit button.
+
+	// Array containing the days of each month respectively in ascending order.
 	const monthDaysArray = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-	//(Above) An array containing the days of each month respectively in ascending order.
+	// Getting the value (a number) associated to the month selected:
 	let selectedMonth = monthSelect.options[monthSelect.selectedIndex].value;
-	// (Above) returns the value (a number) associated to the month selected.
+	// Passing the selected month's value to assign the selected month's days to the variable month:
 	let month = monthDaysArray[selectedMonth];
-	//(Below) Passed the selected month's value (a number) to assign the selected month's days to the variable month.
 
 	if (
 		dataAmount.value == "" &&
@@ -36,9 +37,9 @@ function calculateBudget(e) {
 		console.log("Please enter your data amount");
 	} else {
 		let result = dataAmount.value / month;
-		let resultOutput = result.toFixed(2); //Rounds the returned number result to two decimal places
+		let resultOutput = result.toFixed(2); //Rounds the returned number result (if float) to two decimal places
 
-		output.innerHTML = `<b>${resultOutput}</b> Megabytes`;
+		output.innerHTML = `<b>${resultOutput}</b>`;
 
 		//Test logs:
 		// console.log("data amount: " + dataAmount.value);
